@@ -14,3 +14,9 @@ be created if multiple search are wanted to test.
 Note that this was indented with spaces. In case python
 complaints of unwanted TABS
 """
+class PythonOrgSearch(unittest.TestCase):
+
+    def setUp(self):
+        #specify path to where the chromedriver is installed
+        self.driver = webdriver.Chrome(	
+			executable_path='path to chrome driver')
