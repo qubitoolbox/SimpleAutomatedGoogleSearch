@@ -31,3 +31,11 @@ class PythonOrgSearch(unittest.TestCase):
             time.sleep(1)
             #current search box element
             elem = driver.find_element_by_name('q')
+            #search input inside strings
+            elem.send_keys("Just some random automated search")
+            elem.send_keys(Keys.RETURN)
+            time.sleep(8)
+        except ValueError:
+            print("Seems like elements got woozed.")
+if __name__ == "__main__":
+    unittest.main()
