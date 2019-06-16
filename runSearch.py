@@ -5,3 +5,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 import numpy as np
 import time	
+"""
+A very simple test case that can search for anything
+in Google. The baseline can be improved to search for
+anything in an automated way. Objects or arrays can be
+be created if multiple search are wanted to test. 
+
+Note that this was indented with spaces. In case python
+complaints of unwanted TABS
+"""
