@@ -30,9 +30,9 @@ class PythonOrgSearch(unittest.TestCase):
                 driver = self.driver
                 #Retrieve the site, in this case Google (can be any)
                 driver.get("https://www.google.com")
-            self.assertIn("Google", driver.title)
-            time.sleep(1)
-            #current search box element
+                self.assertIn("Google", driver.title)
+                time.sleep(1) #pause for one second
+                #current search box element
             elem = driver.find_element_by_name('q')
             #search input inside strings
             elem.send_keys("Just some random automated search")
