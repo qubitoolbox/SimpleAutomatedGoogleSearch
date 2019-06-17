@@ -25,8 +25,8 @@ class PythonOrgSearch(unittest.TestCase):
         try:
             #set a value to end program if needed
             runprog = True
-            print("Type what you would like to search below \n")
-            search_input = raw_input(": ")
+            print("Type what you would like to search in Google below \n")
+            search_input = input(": ")
             while runprog:
                 #invoke the driver to begin test
                 driver = self.driver
