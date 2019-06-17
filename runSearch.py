@@ -25,6 +25,8 @@ class PythonOrgSearch(unittest.TestCase):
         try:
             #set a value to end program if needed
             runprog = True
+            print("Type what you would like to search below \n")
+            search_input = raw_input(": ")
             while runprog:
                 #invoke the driver to begin test
                 driver = self.driver
@@ -35,7 +37,7 @@ class PythonOrgSearch(unittest.TestCase):
                 #current search box element
                 elem = driver.find_element_by_name('q')
                 #search input inside strings
-                elem.send_keys("Just some random automated search")
+                elem.send_keys(search_input)
                 elem.send_keys(Keys.RETURN)
                 time.sleep(8)
                 runprog = False #ends the loop
