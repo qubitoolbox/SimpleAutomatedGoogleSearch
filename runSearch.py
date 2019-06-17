@@ -23,7 +23,10 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search_in_python_org(self):
         try:
-            #invoke the driver to begin test
+            #set a value to end program if needed
+            runprog = True
+            while runprog:
+                #invoke the driver to begin test
             driver = self.driver
             #Retrieve the site, in this case Google (can be any)
             driver.get("https://www.google.com")
